@@ -79,4 +79,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-[Fatima Hosseini] - [fatiimahoseini@gmail.com] - [Linedin](https://www.linkedin.com/in/fatiimahoseini)
+[Fatima Hosseini] - [fatiimahoseini@gmail.com] - [Linkedin](https://www.linkedin.com/in/fatiimahoseini)

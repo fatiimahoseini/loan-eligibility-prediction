@@ -1,14 +1,13 @@
-# Loan Eligibility Prediction
+# Loan Eligibility Prediction 🏦
 
 ## Overview
-This project aims to automate the loan approval process by predicting loan eligibility based on customer data. I implement a complete machine learning pipeline, from data preprocessing and exploratory data analysis (EDA) to training and evaluating various classification models, and finally, optimizing their performance.
+This project aims to automate the loan approval process by predicting loan eligibility based on customer data. I implement a complete machine learning pipeline, from data preprocessing and exploratory data analysis (EDA) to training and evaluating various classification models, and finally, optimizing their performance. ✨
 
 ## Project Goal
-The primary goal is to build a robust predictive model that can effectively determine if an applicant is eligible for a loan, thereby streamlining the approval process and reducing manual effort.
+The primary goal is to build a robust predictive model 🤖 that can effectively determine if an applicant is eligible for a loan, thereby streamlining the approval process and reducing manual effort.
 
 ## Dataset
-## Dataset
-The dataset used in this project is `loan.csv`, containing financial and demographic information of loan applicants. 
+The dataset used in this project is `loan.csv`, containing financial and demographic information of loan applicants. 📊
 Below is a summary of the dataset's columns:
 
 | Column Name | Data Type | Non-Null (%) | Unique Values (Examples) | Description |
@@ -31,28 +30,28 @@ Below is a summary of the dataset's columns:
 
 My approach involved the following key steps:
 
-1.  **Data Preprocessing:**
+1.  **Data Preprocessing:** 🧹
     * Handling missing values using median (numerical) and mode (categorical) imputation.
     * Encoding categorical features (Label Encoding for binary, One-Hot Encoding for multi-class like `Dependents` and `Property_Area`).
     * Splitting data into stratified training, validation, and test sets (65-20-15).
     * Standardizing numerical features using `StandardScaler`.
 
-2.  **Exploratory Data Analysis (EDA) & Feature Engineering:**
+2.  **Exploratory Data Analysis (EDA) & Feature Engineering:** 💡
     * Conducted EDA to understand data distributions and correlations. Identified skewed numerical features and outliers (e.g., `ApplicantIncome`, `LoanAmount`).
     * **Engineered New Features:** Created `TotalIncome`, `LoanAmount_per_TotalIncome`, and `LoanAmount_per_Term_Monthly` to capture more relevant financial indicators.
     * **Outlier Management:** Opted for **logarithmic transformation** (`np.log1p`) to mitigate the impact of skewed outliers, rather than removal, to preserve valuable data.
     * Handled any new missing values resulting from engineered features.
 
-3.  **Model Training & Evaluation:**
+3.  **Model Training & Evaluation:** 📈
     * Trained and evaluated three classification models: Logistic Regression, K-Nearest Neighbors (KNN), and Artificial Neural Network (ANN).
     * Developed a modular `run_model_pipeline` function to streamline the training and evaluation process across different models and feature sets, enhancing code reusability and clarity.
 
-4.  **Performance Optimization:**
+4.  **Performance Optimization:** 🚀
     * Applied **Hyperparameter Tuning** using `GridSearchCV` for Logistic Regression on the log-transformed data to find optimal model parameters.
 
 ## Results Highlight
 
-The feature engineering phase proved to be highly impactful, significantly boosting the performance of all models.
+The feature engineering phase proved to be highly impactful, significantly boosting the performance of all models. 🏆
 
 | Model | Accuracy | Precision | Recall | F1-Score | ROC AUC |
 | :-------------------------------- | :------- | :-------- | :----- | :------- | :------ |
@@ -65,9 +64,9 @@ The feature engineering phase proved to be highly impactful, significantly boost
 | **ANN (After FE)** | 0.8172 | 0.8405 | 0.9062 | 0.8721 | 0.7742 |
 
 **Conclusion:**
-**Logistic Regression (after initial feature engineering)** emerged as the top performer (Accuracy: 0.8602, F1-Score: 0.9064, Recall: 0.9843) on the unseen test set, making it the recommended choice due to its strong metrics and interpretability. The dramatic improvement observed in ANN after feature engineering also highlights its potential.
+**Logistic Regression (after initial feature engineering)** emerged as the top performer (Accuracy: 0.8602, F1-Score: 0.9064, Recall: 0.9843) on the unseen test set, making it the recommended choice due to its strong metrics and interpretability. The dramatic improvement observed in ANN after feature engineering also highlights its potential. ✨
 
-## Future Work
+## Future Work 🚀
 
 * Conduct more exhaustive hyperparameter tuning for KNN and ANN.
 * Experiment with Ensemble Methods (e.g., Random Forest, XGBoost) for potentially higher accuracy.
@@ -80,4 +79,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-[Fatima Hosseini] - [fatiimahoseini@gmail.com] - [Linedin(https://www.linkedin.com/in/fatiimahoseini)]
+[Fatima Hosseini] - [fatiimahoseini@gmail.com] - [Linedin](https://www.linkedin.com/in/fatiimahoseini)
